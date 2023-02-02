@@ -61,7 +61,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:layout_marginTop="30dp"
-                android:text="@string/vld_code"
+                android:text="@string/dealers_id"
                 android:textColor="@color/green"
                 android:textSize="22sp"/>
             <LinearLayout

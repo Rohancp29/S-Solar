@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Samrudhi Solar</string>
+    <string name="company_name">Samrudhi Solars Pvt.Ltd.</string>
 
 
     <string name="delears_details">Dealers Details</string>
@@ -21,11 +22,14 @@
     <string name="m_no">Mobile No.</string>
     <string name="cnf_pass">Confirm Password</string>
     <string name="vld_code">Validation Code</string>
+    <string name="dealers_id">Dealers ID</string>
     <string name="user_id">User ID</string>
     <string name="to_samrudhi_solar">to Samrudhi Solar</string>
     <string name="welcome">Welcome</string>
     <string name="forget_pass">Forget Password</string>
     <string name="first_card">Register your \nnew customer with \n<b>Samrudhi</b> fam!</string>
+    <string name="rights_reserved">All rights reserved</string>
+    <string name="version"> V2.0.0</string>
 
 
     <!-- new Customer register activity -->

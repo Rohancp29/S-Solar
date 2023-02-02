@@ -8,7 +8,7 @@
         android:icon="@drawable/baseline_perm_media_24"
         app:cnb_textColor="@color/white"
         app:cnb_iconColor="@color/white"
-        app:cnb_backgroundColor="#3A9CAC"
+        app:cnb_backgroundColor="#3AAC7B"
         android:enabled="true"
         />
     <item
@@ -17,7 +17,7 @@
         android:icon="@drawable/baseline_home_24"
         app:cnb_textColor="@color/white"
         app:cnb_iconColor="@color/white"
-        app:cnb_backgroundColor="#3A9CAC"
+        app:cnb_backgroundColor="#3AAC7B"
         android:enabled="true"
         />
 
@@ -27,7 +27,7 @@
         android:icon="@drawable/baseline_person_24ww"
         app:cnb_textColor="@color/white"
         app:cnb_iconColor="@color/white"
-        app:cnb_backgroundColor="#3A9CAC"
+        app:cnb_backgroundColor="#3AAC7B"
         android:enabled="true"
         />
 

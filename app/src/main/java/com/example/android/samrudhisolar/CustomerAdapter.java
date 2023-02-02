@@ -41,10 +41,9 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.ViewHo
     public void onBindViewHolder(@NonNull CustomerAdapter.ViewHolder holder, int position) {
         CustomerModel customerModel=list.get(position);
         holder.nameTV.setText(customerModel.getNamecu());
-        holder.emailTV.setText(customerModel.getSystemsearialno());
+        holder.emailTV.setText(customerModel.getEmailcu());
         holder.addressTV.setText(customerModel.getAddresscu());
         holder.phoneTV.setText(customerModel.getPhonecu());
-        holder.dateodinstall.setText(customerModel.getDateofinstall());
         Glide.with(context).load(list.get(position).getImagecu()).fitCenter().apply(option).into(holder.customerIV);
     }
 
@@ -57,7 +56,7 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.ViewHo
         notifyDataSetChanged();
     }
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView nameTV,emailTV,addressTV,phoneTV,dateodinstall;
+        TextView nameTV,emailTV,addressTV,phoneTV;
         ImageView customerIV;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -66,7 +65,6 @@ public class CustomerAdapter extends RecyclerView.Adapter<CustomerAdapter.ViewHo
             addressTV=itemView.findViewById(R.id.idTVCUAddress);
             phoneTV=itemView.findViewById(R.id.idTVCUPhoneNumber);
             customerIV=itemView.findViewById(R.id.idIVcu);
-            dateodinstall=itemView.findViewById(R.id.idTVCUdateinstl);
         }
     }
 }

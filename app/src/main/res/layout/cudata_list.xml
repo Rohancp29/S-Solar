@@ -1,83 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="180dp"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal"
-    android:background="@color/neon_green">
-    <!--image view for displaying user image-->
-    <ImageView
-        android:id="@+id/idIVcu"
-        android:src="@mipmap/ic_launcher"
-        android:layout_width="120dp"
+    >
 
-        android:layout_height="150dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
-        />
-    <LinearLayout
+
+
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:layout_margin="8dp"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp"
+        app:cardBackgroundColor="@color/green"
+        android:layout_margin="10dp">
 
-        <!--text view for displaying first name-->
-        <TextView
-            android:id="@+id/idTVCUName"
+
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/idIVcu"
-            android:layout_toRightOf="@id/idIVcu"
-            android:text="First Name"
-            android:textColor="@color/white"
-            android:textSize="15sp" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
 
-        <!--text view for displaying last name-->
-        <TextView
-            android:id="@+id/idTVCUEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            <ImageView
+                android:id="@+id/idIVcu"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/samrudhi_solar_logo"
+                android:padding="5dp"
+                android:layout_gravity="center_vertical"/>
 
-            android:layout_marginTop="10dp"
-            android:text="Email"
-            android:textColor="@color/white"
-            android:textSize="15sp" />
-        <TextView
-            android:id="@+id/idTVCUAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/idTVCUEmail"
-            android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/idIVcu"
-            android:layout_toRightOf="@id/idIVcu"
-            android:text="Address"
-            android:textColor="@color/white"
-            android:textSize="15sp" />
-
-        <TextView
-            android:id="@+id/idTVCUPhoneNumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/idTVCUAddress"
-            android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/idIVcu"
-            android:layout_toRightOf="@id/idIVcu"
-            android:text="Phone Number"
-            android:textColor="@color/white"
-            android:textSize="15sp"
-            android:layout_marginBottom="10dp"/>
-        <TextView
-            android:id="@+id/idTVCUdateinstl"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:layout_marginStart="20dp">
 
 
-            android:text="Date of Installation"
-            android:textColor="@color/white"
-            android:textSize="15sp" />
+                <TextView
+                    android:id="@+id/idTVCUName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="First Name"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"/>
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/idTVCUEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/idTVCUAddress"
+                    android:text="Address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:id="@+id/idTVCUPhoneNumber"
+                    android:text="Phone Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"/>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
 
 </LinearLayout>

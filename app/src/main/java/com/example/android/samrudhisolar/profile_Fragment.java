@@ -122,19 +122,6 @@ public class profile_Fragment extends Fragment {
         phone = view.findViewById(R.id.phonetv);
         valid = view.findViewById(R.id.validationcodetv);
 
-        profileImg = view.findViewById(R.id.profile_pic);
-        updateProfileImg = view.findViewById(R.id.change_profileImg);
-
-        updateProfileImg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setAction(Intent.ACTION_GET_CONTENT);
-                intent.setType("image/*");
-//                startActivityForResult(intent, 10);
-
-            }
-        });
 
         FirebaseUser currentFirebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         if (currentFirebaseUser != null) {
